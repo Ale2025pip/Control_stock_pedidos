@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/background_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Productos en Stock"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/etStockName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Modelo 3D"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <EditText
+        android:id="@+id/etStockMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Material / Filamento (ej: PLA, PETG)"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <EditText
+        android:id="@+id/etStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad en Stock (ej. 5 )"
+        android:inputType="number"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etStockPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio Base $"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <Button
+        android:id="@+id/btnSaveStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar en Stock"
+        android:padding="12dp"
+        android:backgroundTint="@color/primary_purple"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnCancelStock"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:padding="12dp"
+        android:textColor="@color/text_dark" />
+
+</LinearLayout>

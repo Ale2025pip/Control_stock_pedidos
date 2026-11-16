@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/background_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Pedido de Impresión 3D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/etClientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Cliente"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <EditText
+        android:id="@+id/etProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Producto (ej: Lapicero, Soporte, Figura)"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Detalles / Color / Material / Filamento"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <EditText
+        android:id="@+id/etTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio Total $"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <TextView
+        android:id="@+id/tvDeposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seña 50%: $0.00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_purple"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnSaveOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Pedido"
+        android:padding="12dp"
+        android:backgroundTint="@color/primary_purple"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:padding="12dp"
+        android:textColor="@color/text_dark" />
+
+</LinearLayout>
